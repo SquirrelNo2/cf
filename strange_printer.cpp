@@ -10,7 +10,7 @@ int cnt[MAX_SIZE][MAX_SIZE];
 
 int dp(const std::string& s, int l, int r){
   if(l > r) return 0; // invalid range
-  if(l == r) return 1; //
+  if(l == r) return 1; // one cost to print a single character
   if(cnt[l][r] != s.size() + 1) return cnt[l][r]; // solved subproblem
 
   for(int i = l + 1; i <= r; i++){
