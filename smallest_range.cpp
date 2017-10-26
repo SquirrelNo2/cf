@@ -40,7 +40,7 @@ int main(){
 
   ans = make_pair(low, upp);
 
-  if(pq.size() != k){
+  while(pq.size() != k){
     auto ptrow = pq.top();
     ++ptrow.first;
     pq.pop();
